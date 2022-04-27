@@ -20,9 +20,9 @@ class Deployment extends EnvoyerResource
         }
         // @codeCoverageIgnoreEnd
 
-        return \json_decode(
+        return (object) json_decode(
             $response->getBody()->getContents(),
-            true
+            false
         );
     }
 
@@ -44,9 +44,9 @@ class Deployment extends EnvoyerResource
         }
         // @codeCoverageIgnoreEnd
 
-        return \json_decode(
+        return (object) json_decode(
             $response->getBody()->getContents(),
-            true
+            false
         );
     }
 }
