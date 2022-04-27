@@ -22,7 +22,7 @@ class Deployment extends EnvoyerResource
 
         return \json_decode(
             $response->getBody()->getContents(),
-            false
+            true
         );
     }
 
@@ -46,7 +46,7 @@ class Deployment extends EnvoyerResource
 
         return \json_decode(
             $response->getBody()->getContents(),
-            false
+            true
         );
     }
 }
